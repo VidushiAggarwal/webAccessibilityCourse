@@ -1,0 +1,338 @@
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.tabs {
+  margin-bottom: -1px !important;
+  position: relative;
+}
+.tab-content {
+  padding: 2rem;
+}
+.tab-pane {
+  display: none;
+}
+.tab-pane.is-active {
+  display: block;
+  position: relative;
+}
+.is-active {
+  display: initial;
+}
+
+.cent {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box.cta {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.features,
+.medias {
+  padding: 3rem 0;
+}
+
+.features .fa,
+.features .fab {
+  font-size: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #209cee;
+}
+
+.is-shady {
+  animation: flyintoright 0.4s backwards;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.is-shady:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+}
+
+
+.has-same-height .card {
+  height: 350px;
+  overflow: hidden;
+}
+
+.skills-content .media + .media {
+  margin-top: .5rem;
+}
+
+.skills-content .progress {
+  height: 4px !important;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.info-tiles {
+  margin: .75rem auto;
+  padding: 0 .75rem;
+}
+
+.button.is-primary.is-alt {
+  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  font-weight: 700;
+  font-size: 14px;
+  height: 3rem;
+  line-height: 2.8;
+  margin-bottom: 1rem;
+}
+.post {
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E6EAEE;
+}
+.post:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.forum-list li {
+  margin-bottom: .5rem;
+}
+
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: #888;
+  }
+}
+
+.logo-link {
+  height: 70px;
+  width: 250px;
+}
+
+.logo-link img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.hero.is-fullheight {
+  min-height: 70vh;
+}
+
+.blockquote {
+  background-color: #f5f5f5;
+  border-left: 5px solid #dbdbdb;
+  padding: 1.25em 1.5em;
+}
+
+.ol-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ol-list li::before {
+  content: "";
+  background: url(../img/arrow_sans_right-512.png) no-repeat;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+}
+
+.infoBackground {
+  background: #0071bc !important;
+  color: #fff !important;
+}
+
+.sucessBackground {
+  background-color: #2e8540 !important;
+  color: #fff !important;
+}
+
+.dangerBackground {
+  background-color: #e31c3d !important;
+  color: #fff !important;
+}
+
+.primaryBackground {
+  background-color: #008571 !important;
+  color: #fff !important;
+}
+
+.brightBackground {
+  background-color: #fff;
+}
+
+.infoColor, .listStyle li a, .hero.is-info .tabs.is-boxed li.is-active a {
+  color: #0071BC !important;
+}
+
+.dangerColor {
+  color: #e31c3d;
+}
+
+.sucessColor {
+  color: #2e8540;
+}
+
+.lightColor{
+  color: #454545;
+}
+
+.brightColor {
+  color: #fff !important;
+}
+
+.hero.is-info a:not(.button):not(.dropdown-item):not(.tag) {
+  opacity: 1;
+}
+
+p {
+  line-height: 1.5 !important;
+}
+
+.headingStyle {
+  font-size: 1.25em;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button:hover{
+  border: 2px solid #dbdbdb;
+}
+
+a.info span {
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+}
+
+a.info:hover span, a.info:focus span, a.info:active span {
+  display: block;
+  position: absolute;
+  left: 35rem;
+  bottom: -2rem;
+  right: 35rem;
+  width: 10rem;
+  border: 1px solid #0cf;
+  background-color:#cff;
+  color:#000;
+  text-align: center
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  display: flex;
+  margin-bottom: 0px !important;
+}
+
+.breadcrumbsStyle{
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropbtn {
+  background-color: #0071BC;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 140px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.showAdmin {
+  display: block;
+}
+
+#planetsSelect {
+  width: 50%; 
+  margin: 0rem 2rem 0rem 2rem; 
+  padding: 0.5rem;
+}
+
+#planetFieldset {
+  border: none; 
+  display: flex; 
+  margin-bottom: 2rem; 
+  align-items: center; 
+  justify-content: center;
+}
+
+#adminMenu {
+  top:4rem;
+  left:-10rem;
+}
