@@ -64,7 +64,7 @@
                   <span class="icon" aria-hidden="true">
                     <i class="fa fa-home"></i>
                   </span>
-                  <span>Home</span>
+                  <button class="mainNav">Home</button>
                 </a>
               </span>
               <span class="navbar-item">
@@ -72,19 +72,20 @@
                   <span class="icon" aria-hidden="true">
                     <i class="fa-solid fa-superpowers"></i>
                   </span>
-                  <span class="dropbtn" onclick="adminBtnClick()" id="adminbutton" aria-haspopup="true"
-                    aria-controls="adminDropdown"
-                    style="background-color: transparent; color: inherit; padding: 0px;">Administration</span>
+                  <button class="dropbtn mainNav" onclick="adminBtnClick()" id="adminbutton" aria-haspopup="true"
+                    aria-controls="adminDropdown">Administration</button>
                 </a>
               </span>
               <div class="dropdown" id="adminMenu">
                 <ul class="dropdown-content" id="adminDropdown" role="menu" aria-labelledby="adminbutton">
-                  <li role="none"><a role="menuitem">Administration</a></li>
-                  <li role="none"><a role="menuitem">Team Settings</a></li>
-                  <li role="none"><a role="menuitem">Manage Your Team</a></li>
-                  <li role="none"><a role="menuitem">Invitations</a></li>
-                  <li role="none"><a role="separator" style="padding: 0px;"><hr style="margin: 0px; background-color: #c7c6c6; height: 1px;"/></a></li>
-                  <li role="none"><a role="menuitem">Authentication</a></li>
+                  <li role="none"><a role="menuitem" href="">Administration</a></li>
+                  <li role="none"><a role="menuitem" href="">Team Settings</a></li>
+                  <li role="none"><a role="menuitem" href="">Manage Your Team</a></li>
+                  <li role="none"><a role="menuitem" href="">Invitations</a></li>
+                  <li role="none"><a role="separator" style="padding: 0px;">
+                      <hr style="margin: 0px; background-color: #c7c6c6; height: 1px;" />
+                    </a></li>
+                  <li role="none"><a role="menuitem" href="">Authentication</a></li>
                 </ul>
               </div>
               <span class="navbar-item">
@@ -92,7 +93,7 @@
                   <span class="icon" aria-hidden="true">
                     <i class="fab fa-superpowers"></i>
                   </span>
-                  <span>Examples</span>
+                  <button class="mainNav">Examples</button>
                 </a>
               </span>
               <span class="navbar-item">
@@ -100,7 +101,7 @@
                   <span class="icon" aria-hidden="true">
                     <i class="fa fa-book"></i>
                   </span>
-                  <span>Documentation</span>
+                  <button class="mainNav">Documentation</button>
                 </a>
               </span>
               <span class="navbar-item">
@@ -108,7 +109,7 @@
                   <span class="icon" aria-hidden="true">
                     <i class="fab fa-github"></i>
                   </span>
-                  <span>View Source</span>
+                  <button class="mainNav">View Source</button>
                 </a>
               </span>
             </div>
@@ -331,61 +332,47 @@
   <section class="hero is-info infoBackground" id="topicsList" aria-label="List of topics">
     <div class="hero-body">
       <div class="container">
-        <div class="title" role="heading" aria-level="1">List of topics</div>
-        <div class="subtitle brightColor" role="heading" aria-level="2">We are always in touch we the outside world
-        </div>
+        <h2 class="title">List of topics</h2>
+        <div class="subtitle"style="color:white;">We are always in touch we the outside world</div>
       </div>
     </div>
-    <div class="tabs is-boxed is-centered main-menu" id="nav">
-      <ul role="tablist" aria-label="Topics Tabs">
-        <li data-target="pane-1" id="tab-1" class="is-active" role="tab" aria-selected="true" aria-controls="panel-1"
-          tabindex="0">
-          <a>
-            <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
-            <span>Pictures</span>
-          </a>
-        </li>
-        <li data-target="pane-2" id="tab-2" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">
-          <a>
-            <span class="icon is-small" aria-hidden="true"><i class="fa fa-book"></i></span>
-            <span>Articles</span>
-          </a>
-        </li>
-        <li data-target="pane-3" id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">
-          <a>
-            <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
-            <span>Team</span>
-          </a>
-        </li>
-        <li data-target="pane-4" id="tab-4" role="tab" aria-selected="false" aria-controls="panel-4" tabindex="-1">
-          <a>
-            <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
-            <span>Video</span>
-          </a>
-        </li>
-      </ul>
+    <div role="tablist" aria-label="Topics" id="nav" class="tabs is-boxed is-centered main-menu" style="justify-content:center;">
+      <button data-target="pane-1" id="tab-1" class="is-active" aria-selected="true" role="tab" aria-controls="pane-1">
+        <span aria-hidden="true" class="icon is-small"><i class="fa fa-image"></i></span>
+        <span>Pictures</span>
+      </button>
+      <button data-target="pane-2" id="tab-2" aria-selected="false" role="tab" tabindex="-1" aria-controls="pane-2">
+        <span aria-hidden="true" class="icon is-small"><i class="fa fa-book"></i></span>
+        <span>Articles</span>
+      </button>
+      <button data-target="pane-3" id="tab-3" aria-selected="false" role="tab" tabindex="-1" aria-controls="pane-3">
+        <span aria-hidden="true" class="icon is-small"><i class="fab fa-superpowers"></i></span>
+        <span>Team</span>
+      </button>
+      <button data-target="pane-4" id="tab-4" aria-selected="false" role="tab" tabindex="-1" aria-controls="pane-4">
+        <span aria-hidden="true" class="icon is-small"><i class="fa fa-film"></i></span>
+        <span>Video</span>
+      </button>
     </div>
   </section>
-
   <section class="tab-content container">
-    <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+    <div class="tab-pane is-active" id="pane-1" class="level" aria-labelledby="tab-1" role="tabpanel" tabindex="0">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1" alt="Find location">
+                  <img src="./img/tab-1.jpg" alt="controler" class="modal-button" data-target="modal-image1">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Click on image above</div>
-                  <p lang="la">Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec.
-                    Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat
-                    semper viverra nam.</p>
-                  <button class="button modal-button infoBackground" data-target="modal-image1"
-                    aria-haspopup="true">Image modal</button>
+                  <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer
+                    enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper
+                    viverra nam.</p>
+                  <span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
                 </div>
               </div>
             </div>
@@ -394,18 +381,17 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-2.jpg" alt="Beach at day">
+                  <img src="./img/tab-2.jpg" alt="island">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
-                  <div lang="la">Tempor orci dapibus ultrices in.</div>
-                  <p lang="la">Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque.
-                    Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas
-                    cmonsu songue. Phasellus vestibulum lorem
+                  <div>Tempor orci dapibus ultrices in.</div>
+                  <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non
+                    odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue.
+                    Phasellus vestibulum lorem
                     sed risus.</p>
-                  <button class="button modal-button infoBackground" data-target="modal-card" aria-haspopup="true">Modal
-                    Card</button>
+                  <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
                 </div>
               </div>
             </div>
@@ -414,17 +400,16 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2" alt="Beach at night">
+                  <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2" alt="sea beach rainbow">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Click anywhere on card</div>
-                  <p lang="la">Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla
-                    pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas
-                    accumsan lacus vel facilisis.</p>
-                  <button class="button modal-button infoBackground" data-target="modal-image2"
-                    aria-haspopup="true">Image modal</button>
+                  <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque
+                    dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan
+                    lacus vel facilisis.</p>
+                  <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
                 </div>
               </div>
             </div>
@@ -432,8 +417,7 @@
         </div>
       </div>
     </div>
-
-    <div class="tab-pane" id="pane-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+    <div class="tab-pane" id="pane-2" role="tabpanel" aria-labelledby="tab-2" tabindex="0" hidden>
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <div class="title has-text-centered">Must Read!</div>
@@ -462,8 +446,7 @@
         </div>
       </div>
     </div>
-
-    <div class="tab-pane" id="pane-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+    <div class="tab-pane" id="pane-3" aria-labelledby="tab-3" role="tabpanel" tabindex="0" hidden>
       <div class="columns medias">
         <div class="column">
           <div class="media">
@@ -472,8 +455,8 @@
             </div>
             <div class="media-content">
               <div class="content">
-                <p lang="la">
-                  <a><b>Dominic Ipsum</b></a>
+                <p>
+                  <a href="/"><b>Dominic Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
                   fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
@@ -486,8 +469,8 @@
             </div>
             <div class="media-content">
               <div class="content">
-                <p lang="la">
-                  <a><b>Cassie Ipsum</b></a>
+                <p>
+                  <a href="/"><b>Cassie Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
                   fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
@@ -502,8 +485,8 @@
             </div>
             <div class="media-content">
               <div class="content">
-                <p lang="la">
-                  <a><b>Avery Ipsum</b></a>
+                <p>
+                  <a href="/"><b>Avery Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
                   fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
@@ -516,8 +499,8 @@
             </div>
             <div class="media-content">
               <div class="content">
-                <p lang="la">
-                  <a><b>io Ipsum</b></a>
+                <p>
+                  <a href="/"><b>io Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
                   fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
@@ -527,8 +510,7 @@
         </div>
       </div>
     </div>
-
-    <div class="tab-pane" id="pane-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" hidden>
+    <div class="tab-pane" id="pane-4" aria-labelledby="tab-4" role="tabpanel" tabindex="0" hidden>
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <div class="title has-text-centered">Inspired video</div>
@@ -1337,6 +1319,7 @@
       </div>
 
       <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script async src="js/custom.js"></script>
 </body>
 

@@ -20,6 +20,9 @@
 }
 .is-active {
   display: initial;
+  background: white !important;
+  color: #0071bc !important;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .cent {
@@ -335,4 +338,19 @@ ul.breadcrumb {
 #adminMenu {
   top:4rem;
   left:-10rem;
+}
+
+.mainNav {
+  background-color: transparent; 
+  color: inherit; 
+  padding: 0px;
+  border: none;
+}
+
+#nav button {
+  color: white;
+  border: none;
+  font-size: 1rem;
+  background: #0071bc;
+  padding: 5px 10px;
 }
